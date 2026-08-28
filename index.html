@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atlas digital de apuntes del primer año de Medicina en la UNLP.">
+  <title>FICHA — Atlas de primer año</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="app wide">
+  <header class="site-header">
+    <a class="brand" href="index.html">FICHA<span>MED</span></a>
+    <div class="site-note">FCM · UNLP / primer año</div>
+    <a class="header-link" href="#materias">Biblioteca</a>
+    <button class="icon-button" type="button" data-theme-toggle>Modo oscuro</button>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="hero-copy-block">
+        <div class="kicker hero-kicker"><span></span> Atlas de estudio · FCM UNLP</div>
+        <h1 id="titulo-principal">Tu primer año,<br><em>bien conectado.</em></h1>
+        <p class="hero-copy">Un espacio claro para reunir apuntes, relacionar conceptos y volver a lo importante sin perder tiempo buscando.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#materias">Entrar a la biblioteca <span>↓</span></a>
+          <span class="hero-meta"><b>4 materias</b><small>Un solo lugar de estudio</small></span>
+        </div>
+      </div>
+
+      <figure class="atlas-figure" aria-label="Mapa visual de las materias de primer año">
+        <div class="atlas-grid"></div>
+        <svg viewBox="0 0 420 520" role="img" aria-label="Silueta anatómica lineal">
+          <g fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="210" cy="64" r="37"/>
+            <path d="M210 102 C204 145 205 190 210 238 C216 294 214 350 210 466"/>
+            <path d="M174 116 C137 131 115 166 109 215 M246 116 C283 131 305 166 311 215"/>
+            <path d="M171 128 C184 140 236 140 249 128 M153 153 C173 169 247 169 267 153 M139 181 C166 202 254 202 281 181 M132 211 C165 232 255 232 288 211"/>
+            <path d="M160 239 C144 286 148 337 165 371 L138 468 M260 239 C276 286 272 337 255 371 L282 468"/>
+            <path d="M171 253 C189 266 231 266 249 253 M165 371 C188 385 232 385 255 371"/>
+          </g>
+          <g fill="currentColor"><circle cx="210" cy="153" r="5"/><circle cx="132" cy="211" r="5"/><circle cx="255" cy="371" r="5"/></g>
+        </svg>
+        <a class="atlas-label label-a" href="anatomia/index.html"><i style="--dot:var(--anatomy)"></i>Anatomía</a>
+        <a class="atlas-label label-b" href="biologia/index.html"><i style="--dot:var(--biology)"></i>Biología</a>
+        <a class="atlas-label label-c" href="sociales/index.html"><i style="--dot:var(--social)"></i>Sociales</a>
+        <a class="atlas-label label-d" href="citologia-histologia-embriologia/index.html"><i style="--dot:var(--morphology)"></i>Citología · Histología · Embriología</a>
+        <figcaption class="atlas-index"><b>01</b><span>Año académico<br>en construcción</span></figcaption>
+      </figure>
+    </section>
+
+    <nav class="study-dock" aria-label="Accesos rápidos">
+      <span class="dock-title">Acceso rápido</span>
+      <a href="anatomia/index.html"><i style="--dot:var(--anatomy)"></i><span>Anatomía<small>Estructura</small></span><b>↗</b></a>
+      <a href="biologia/index.html"><i style="--dot:var(--biology)"></i><span>Biología<small>Vida celular</small></span><b>↗</b></a>
+      <a href="sociales/index.html"><i style="--dot:var(--social)"></i><span>Sociales<small>Salud y contexto</small></span><b>↗</b></a>
+      <a href="citologia-histologia-embriologia/index.html"><i style="--dot:var(--morphology)"></i><span>CHE<small>Microestructura</small></span><b>↗</b></a>
+    </nav>
+
+    <section class="subjects" id="materias" aria-labelledby="materias-title">
+      <div class="section-heading">
+        <div><span class="kicker">Biblioteca activa</span><h2 id="materias-title">Materias</h2></div>
+        <p>Primer año · Medicina · Universidad Nacional de La Plata</p>
+      </div>
+
+      <div class="subject-list">
+        <a class="subject-row" style="--stain:var(--anatomy)" href="anatomia/index.html">
+          <span class="subject-abbr">ANA</span>
+          <div><span class="tag">Anual / 250 horas</span><h3>Anatomía</h3><p>Estructura del cuerpo humano, regiones y sistemas.</p></div>
+          <span class="subject-action">Abrir <b>↗</b></span>
+        </a>
+        <a class="subject-row" style="--stain:var(--biology)" href="biologia/index.html">
+          <span class="subject-abbr">BIO</span>
+          <div><span class="tag">Anual / 60 horas</span><h3>Biología</h3><p>Biología celular, genética y bases de la vida.</p></div>
+          <span class="subject-action">Abrir <b>↗</b></span>
+        </a>
+        <a class="subject-row" style="--stain:var(--social)" href="sociales/index.html">
+          <span class="subject-abbr">CSM</span>
+          <div><span class="tag">Cuatrimestral / 60 horas</span><h3>Ciencias Sociales y Medicina</h3><p>La salud en sus contextos sociales, históricos y culturales.</p></div>
+          <span class="subject-action">Abrir <b>↗</b></span>
+        </a>
+        <a class="subject-row" style="--stain:var(--morphology)" href="citologia-histologia-embriologia/index.html">
+          <span class="subject-abbr">CHE</span>
+          <div><span class="tag">Anual / 190 horas</span><h3>Citología, Histología y Embriología</h3><p>Células, tejidos y desarrollo humano.</p></div>
+          <span class="subject-action">Abrir <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>FICHA / atlas personal</span><span>Medicina · UNLP</span><span>2026</span></footer>
+</div>
+</body>
+</html>
