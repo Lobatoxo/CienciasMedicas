@@ -5,74 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Atlas digital de apuntes del primer año de Medicina en la UNLP.">
   <title>FICHA — Atlas de primer año</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script src="script.js?v=4" defer></script>
 </head>
 <body class="home-page">
-  <div class="app wide">
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="FICHA, inicio">FICHA<span>MED</span></a>
-      <div class="site-note">FCM · UNLP / primer año</div>
-      <a class="header-link" href="#materias">Biblioteca</a>
-      <button class="icon-button" type="button" data-theme-toggle>Modo oscuro</button>
+  <div class="app wide home-atlas">
+    <header class="site-header home-header">
+      <span class="home-coordinate">34°55′S &nbsp; 57°57′O</span>
+      <nav class="home-nav" aria-label="Navegación principal">
+        <a class="is-active" href="#materias">Índice</a>
+        <a href="anatomia/index.html">Anatomía</a>
+        <a href="biologia/index.html">Biología</a>
+        <a href="sociales/index.html">Sociales</a>
+        <a href="citologia-histologia-embriologia/index.html">CHE</a>
+      </nav>
+      <a class="home-search" href="#materias">Buscar</a>
+      <span class="registration-mark" aria-hidden="true"></span>
     </header>
 
     <main>
-      <section class="home-hero" aria-labelledby="titulo-principal">
-        <div class="home-hero-copy">
-          <div class="kicker">Atlas académico / 01—04</div>
+      <section class="reference-hero" aria-labelledby="titulo-principal">
+        <div class="reference-title-panel">
           <h1 id="titulo-principal">FICHA</h1>
-          <p>Apuntes de primer año para estudiar la medicina como un sistema: estructura, mecanismo, contexto y desarrollo.</p>
-          <a class="primary-link" href="#materias">Explorar archivo <span aria-hidden="true">↓</span></a>
+          <i class="title-marker" aria-hidden="true"></i>
+          <p>Atlas de primer año<br>Medicina · UNLP</p>
         </div>
 
-        <figure class="anatomical-plate">
-          <div class="plate-label plate-label-top">PLACA / 001</div>
-          <div class="plate-label plate-label-side">ANTERIOR · 1:12</div>
-          <img class="hero-anatomy-image" src="assets/visuals/ficha-hero.jpg" alt="Modelo anatómico humano, mitad esqueleto y mitad sistema muscular" width="1024" height="1536" fetchpriority="high">
-          <figcaption>FIG. 01 / Organización del cuerpo humano</figcaption>
+        <figure class="reference-image-panel">
+          <div class="figure-data">
+            <span>FIG. 01</span>
+            <span>CUERPO HUMANO</span>
+            <span>VISTA ANTERIOR</span>
+            <span>DISSECTIO.</span>
+          </div>
+          <img src="assets/visuals/ficha-hero.jpg" alt="Modelo anatómico humano, mitad esqueleto y mitad sistema muscular" width="1024" height="1536" fetchpriority="high">
+          <span class="image-crosshair" aria-hidden="true"></span>
+          <figcaption>ATLAS / ANATOMÍA GENERAL</figcaption>
         </figure>
+
+        <aside class="reference-rail" aria-label="Datos de la lámina">
+          <span>ATLAS HUMANI CORPORIS</span>
+          <div><small>LÁMINA</small><b>01 / 04</b></div>
+          <i aria-hidden="true"></i>
+        </aside>
       </section>
 
-      <section class="subjects" id="materias" aria-labelledby="materias-title">
-        <header class="section-heading">
-          <div>
-            <span class="kicker">Biblioteca activa</span>
-            <h2 id="materias-title">Materias</h2>
-          </div>
-          <p>01 / Año inicial<br>Medicina · UNLP</p>
+      <section class="reference-subjects" id="materias" aria-labelledby="materias-title">
+        <header class="reference-subjects-header">
+          <h2 id="materias-title">04 Materias</h2>
+          <span aria-hidden="true"></span>
         </header>
 
-        <div class="subject-list">
-          <a class="subject-row" href="anatomia/index.html">
-            <span class="subject-number">01</span>
-            <span class="subject-abbr">ANA</span>
-            <div><span class="tag">Anual / 250 horas</span><h3>Anatomía</h3><p>Estructura del cuerpo humano, regiones y sistemas.</p></div>
-            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+        <div class="reference-subject-list">
+          <a class="reference-subject-row" href="anatomia/index.html">
+            <strong class="reference-number">01</strong>
+            <span class="reference-code"><small>Código</small><b>ANA</b><small>Grupo<br>01</small></span>
+            <h3>Anatomía</h3>
+            <span class="reference-count"><small>Archivo</small><b>09</b></span>
+            <span class="reference-open">Abrir índice <b aria-hidden="true">↗</b></span>
           </a>
-          <a class="subject-row" href="biologia/index.html">
-            <span class="subject-number">02</span>
-            <span class="subject-abbr">BIO</span>
-            <div><span class="tag">Anual / 60 horas</span><h3>Biología</h3><p>Biología celular, genética y bases de la vida.</p></div>
-            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          <a class="reference-subject-row" href="biologia/index.html">
+            <strong class="reference-number">02</strong>
+            <span class="reference-code"><small>Código</small><b>BIO</b><small>Grupo<br>02</small></span>
+            <h3>Biología</h3>
+            <span class="reference-count"><small>Archivo</small><b>01</b></span>
+            <span class="reference-open">Abrir índice <b aria-hidden="true">↗</b></span>
           </a>
-          <a class="subject-row" href="sociales/index.html">
-            <span class="subject-number">03</span>
-            <span class="subject-abbr">CSM</span>
-            <div><span class="tag">Cuatrimestral / 60 horas</span><h3>Ciencias Sociales y Medicina</h3><p>La salud en sus contextos sociales, históricos y culturales.</p></div>
-            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          <a class="reference-subject-row" href="sociales/index.html">
+            <strong class="reference-number">03</strong>
+            <span class="reference-code"><small>Código</small><b>CSM</b><small>Grupo<br>03</small></span>
+            <h3>Ciencias Sociales y Medicina</h3>
+            <span class="reference-count"><small>Archivo</small><b>01</b></span>
+            <span class="reference-open">Abrir índice <b aria-hidden="true">↗</b></span>
           </a>
-          <a class="subject-row" href="citologia-histologia-embriologia/index.html">
-            <span class="subject-number">04</span>
-            <span class="subject-abbr">CHE</span>
-            <div><span class="tag">Anual / 190 horas</span><h3>Citología, Histología y Embriología</h3><p>Células, tejidos y desarrollo humano.</p></div>
-            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          <a class="reference-subject-row" href="citologia-histologia-embriologia/index.html">
+            <strong class="reference-number">04</strong>
+            <span class="reference-code"><small>Código</small><b>CHE</b><small>Grupo<br>04</small></span>
+            <h3>Citología, Histología y Embriología</h3>
+            <span class="reference-count"><small>Archivo</small><b>01</b></span>
+            <span class="reference-open">Abrir índice <b aria-hidden="true">↗</b></span>
           </a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><span>FICHA / atlas personal</span><span>Medicina · UNLP</span><span>2026</span></footer>
+    <footer class="reference-footer">
+      <span class="footer-cross" aria-hidden="true"></span>
+      <span>FICHA · Atlas de primer año<br>Medicina · UNLP</span>
+      <span><small>Versión</small>2026.2</span>
+      <span><small>Última actualización</small>30 / 08 / 2026</span>
+      <span>Hecho para estudiantes.<br>Organizado para estudiar.</span>
+      <span class="footer-cross red" aria-hidden="true"></span>
+    </footer>
   </div>
 </body>
 </html>
