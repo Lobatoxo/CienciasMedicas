@@ -1659,3 +1659,16 @@ mark { color: inherit; background: transparent; }
   .subject-hero--illustrated .subject-visual { height: 290px; min-height: 290px; }
   .subject-hero--illustrated .subject-visual img { object-position: 55% center; }
 }
+
+/* La imagen de referencia ya contiene sus propias guías y anotaciones */
+.reference-image-panel::before,
+.reference-image-panel::after { content: none; }
+
+.reference-image-panel img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: normal;
+}
