@@ -8,70 +8,90 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body>
-<div class="app wide">
-  <header class="site-header">
-    <a class="brand" href="index.html">FICHA<span>MED</span></a>
-    <div class="site-note">FCM · UNLP / primer año</div>
-    <a class="header-link" href="#materias">Biblioteca</a>
-    <button class="icon-button" type="button" data-theme-toggle>Modo oscuro</button>
-  </header>
+<body class="home-page">
+  <div class="app wide">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FICHA, inicio">FICHA<span>MED</span></a>
+      <div class="site-note">FCM · UNLP / primer año</div>
+      <a class="header-link" href="#materias">Biblioteca</a>
+      <button class="icon-button" type="button" data-theme-toggle>Modo oscuro</button>
+    </header>
 
-  <main>
-    <section class="hero" aria-labelledby="titulo-principal">
-      <div class="hero-copy-block">
-        <div class="kicker hero-kicker"><span></span> Atlas de estudio · FCM UNLP</div>
-        <h1 id="titulo-principal">Facultad de Ciencias Médicas,<br><em>Universidad Nacional de La Plata</em></h1>
-        <p class="hero-copy">Un espacio claro para reunir apuntes, relacionar conceptos y volver a lo importante sin perder tiempo buscando.</p>
-        <div class="hero-actions">
-          <a class="primary-link" href="#materias">Entrar a la biblioteca <span>↓</span></a>
-          <span class="hero-meta"><b>4 materias</b><small>Un solo lugar de estudio</small></span>
+    <main>
+      <section class="home-hero" aria-labelledby="titulo-principal">
+        <div class="home-hero-copy">
+          <div class="kicker">Atlas académico / 01—04</div>
+          <h1 id="titulo-principal">FICHA</h1>
+          <p>Apuntes de primer año para estudiar la medicina como un sistema: estructura, mecanismo, contexto y desarrollo.</p>
+          <a class="primary-link" href="#materias">Explorar archivo <span aria-hidden="true">↓</span></a>
         </div>
-      </div>
 
-    
-    </section>
+        <figure class="anatomical-plate" aria-label="Lámina anatómica abstracta del cuerpo humano">
+          <div class="plate-label plate-label-top">PLACA / 001</div>
+          <div class="plate-label plate-label-side">ANTERIOR · 1:12</div>
+          <svg viewBox="0 0 680 720" role="img" aria-labelledby="plate-title">
+            <title id="plate-title">Esquema anatómico lineal</title>
+            <g class="plate-grid" aria-hidden="true">
+              <path d="M0 90H680M0 180H680M0 270H680M0 360H680M0 450H680M0 540H680M0 630H680"/>
+              <path d="M85 0V720M170 0V720M255 0V720M340 0V720M425 0V720M510 0V720M595 0V720"/>
+            </g>
+            <g class="plate-body">
+              <ellipse cx="340" cy="105" rx="62" ry="78"/>
+              <path d="M315 176v41m50-41v41M286 220c-50 15-82 45-99 92l-41 154m248-246c50 15 82 45 99 92l41 154M287 220c15 52 8 104-9 158-12 39-4 79 20 112m95-270c-15 52-8 104 9 158 12 39 4 79-20 112M278 378c36 23 88 23 124 0M298 490l-27 195m111-195 27 195M340 217v271M309 268c18-18 44-18 62 0m-79 55c31 26 65 26 96 0m-101 80c34 18 72 18 106 0"/>
+              <path d="M317 228c-37 14-55 43-48 82 9 46 25 75 71 91 46-16 62-45 71-91 7-39-11-68-48-82M321 497l19 39 19-39M271 685l-9 25m147-25 9 25M146 466l-11 40m399-40 11 40"/>
+              <circle cx="340" cy="105" r="7"/>
+              <path d="M310 102h60M340 75v60"/>
+            </g>
+            <g class="plate-guides" aria-hidden="true">
+              <path d="M74 220h112m308 0h112M75 490h211m108 0h211"/>
+              <circle cx="187" cy="220" r="4"/><circle cx="493" cy="220" r="4"/>
+              <circle cx="286" cy="490" r="4"/><circle cx="394" cy="490" r="4"/>
+            </g>
+            <circle class="plate-signal" cx="411" cy="309" r="18"/>
+          </svg>
+          <figcaption>FIG. 01 / Organización del cuerpo humano</figcaption>
+        </figure>
+      </section>
 
-    <nav class="study-dock" aria-label="Accesos rápidos">
-      <span class="dock-title">Acceso rápido</span>
-      <a href="anatomia/index.html"><i style="--dot:var(--anatomy)"></i><span>Anatomía<small>Estructura</small></span><b>↗</b></a>
-      <a href="biologia/index.html"><i style="--dot:var(--biology)"></i><span>Biología<small>Vida celular</small></span><b>↗</b></a>
-      <a href="sociales/index.html"><i style="--dot:var(--social)"></i><span>Sociales<small>Salud y contexto</small></span><b>↗</b></a>
-      <a href="citologia-histologia-embriologia/index.html"><i style="--dot:var(--morphology)"></i><span>CHE<small>Microestructura</small></span><b>↗</b></a>
-    </nav>
+      <section class="subjects" id="materias" aria-labelledby="materias-title">
+        <header class="section-heading">
+          <div>
+            <span class="kicker">Biblioteca activa</span>
+            <h2 id="materias-title">Materias</h2>
+          </div>
+          <p>01 / Año inicial<br>Medicina · UNLP</p>
+        </header>
 
-    <section class="subjects" id="materias" aria-labelledby="materias-title">
-      <div class="section-heading">
-        <div><span class="kicker">Biblioteca activa</span><h2 id="materias-title">Materias</h2></div>
-        <p>Primer año · Medicina · Universidad Nacional de La Plata</p>
-      </div>
+        <div class="subject-list">
+          <a class="subject-row" href="anatomia/index.html">
+            <span class="subject-number">01</span>
+            <span class="subject-abbr">ANA</span>
+            <div><span class="tag">Anual / 250 horas</span><h3>Anatomía</h3><p>Estructura del cuerpo humano, regiones y sistemas.</p></div>
+            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="subject-row" href="biologia/index.html">
+            <span class="subject-number">02</span>
+            <span class="subject-abbr">BIO</span>
+            <div><span class="tag">Anual / 60 horas</span><h3>Biología</h3><p>Biología celular, genética y bases de la vida.</p></div>
+            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="subject-row" href="sociales/index.html">
+            <span class="subject-number">03</span>
+            <span class="subject-abbr">CSM</span>
+            <div><span class="tag">Cuatrimestral / 60 horas</span><h3>Ciencias Sociales y Medicina</h3><p>La salud en sus contextos sociales, históricos y culturales.</p></div>
+            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="subject-row" href="citologia-histologia-embriologia/index.html">
+            <span class="subject-number">04</span>
+            <span class="subject-abbr">CHE</span>
+            <div><span class="tag">Anual / 190 horas</span><h3>Citología, Histología y Embriología</h3><p>Células, tejidos y desarrollo humano.</p></div>
+            <span class="subject-action">Abrir <b aria-hidden="true">↗</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
 
-      <div class="subject-list">
-        <a class="subject-row" style="--stain:var(--anatomy)" href="anatomia/index.html">
-          <span class="subject-abbr">ANA</span>
-          <div><span class="tag">Anual / 250 horas</span><h3>Anatomía</h3><p>Estructura del cuerpo humano, regiones y sistemas.</p></div>
-          <span class="subject-action">Abrir <b>↗</b></span>
-        </a>
-        <a class="subject-row" style="--stain:var(--biology)" href="biologia/index.html">
-          <span class="subject-abbr">BIO</span>
-          <div><span class="tag">Anual / 60 horas</span><h3>Biología</h3><p>Biología celular, genética y bases de la vida.</p></div>
-          <span class="subject-action">Abrir <b>↗</b></span>
-        </a>
-        <a class="subject-row" style="--stain:var(--social)" href="sociales/index.html">
-          <span class="subject-abbr">CSM</span>
-          <div><span class="tag">Cuatrimestral / 60 horas</span><h3>Ciencias Sociales y Medicina</h3><p>La salud en sus contextos sociales, históricos y culturales.</p></div>
-          <span class="subject-action">Abrir <b>↗</b></span>
-        </a>
-        <a class="subject-row" style="--stain:var(--morphology)" href="citologia-histologia-embriologia/index.html">
-          <span class="subject-abbr">CHE</span>
-          <div><span class="tag">Anual / 190 horas</span><h3>Citología, Histología y Embriología</h3><p>Células, tejidos y desarrollo humano.</p></div>
-          <span class="subject-action">Abrir <b>↗</b></span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><span>FICHA / atlas personal</span><span>Medicina · UNLP</span><span>2026</span></footer>
-</div>
+    <footer class="site-footer"><span>FICHA / atlas personal</span><span>Medicina · UNLP</span><span>2026</span></footer>
+  </div>
 </body>
 </html>
